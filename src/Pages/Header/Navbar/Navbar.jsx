@@ -1,8 +1,17 @@
 import { useState } from 'react';
 import { HiMenuAlt2 } from "react-icons/hi";
+import NavLinks from './NavLinks';
 const Navbar = () => {
 
     const [isOpen, setIsOpen] = useState(false)
+    // borderClass
+    /* In your CSS or SCSS file */
+    const BottomBorder = {
+        borderBottom: "1px solid  #EEEEEE",
+        width: "100%",
+        marginLeft: "0"
+    }
+
 
 
     return (
@@ -19,55 +28,34 @@ const Navbar = () => {
 
                         </div>
                         {/* dropdown menus */}
-                        <div className={isOpen ? "absolute bg-white shadow-2xl px-[2.4rem]  top-[5.5rem] transition-all duration-1000" : "absolute bg-white shadow-2xl px-[2.4rem] py-5  -top-full transition-all duration-1000 "}>
-                            <ul className='list-none mt-4 mb-4 top-full left-0 flex flex-col gap-y-8 '>
-                                <div className='h-5 cursor-pointer hover:text-blue-500 '>
-                                    <li className='border border-b-2  border-black'>Home & Kitchen</li>
-                                </div>
-                                <div className='h-5 cursor-pointer hover:text-blue-500'>
-                                    <li>Electronics & Digital</li>
-                                </div>
-                                <div className='h-5 cursor-pointer hover:text-blue-500'>
-                                    <li>Home Accessories</li>
+                        <div className={isOpen ? "absolute bg-white shadow-2xl w-[12.4%]  top-[5.5rem] transition-all opacity-100 duration-200" : "absolute bg-white shadow-2xl w-[12.4%] py-5  -top-full transition-all duration-700 opacity-0 "}>
+                            <ul className='list-none mt-4 mb-4 text-left top-full left-0 flex flex-col gap-y-4 '>
 
+                                <div className='cursor-pointer hover:text-blue-500' style={BottomBorder}>
+                                    <li className='ml-3 mb-5'>Home & Kitchen</li>
                                 </div>
-                                <div className='h-5 cursor-pointer hover:text-blue-500'>
-                                    <li>Electronics</li>
+                                <div className='cursor-pointer hover:text-blue-500' style={BottomBorder}>
+                                    <li className='ml-3 mb-4'>Electronics & Digital</li>
+                                </div>
+                                <div className='cursor-pointer hover:text-blue-500' style={BottomBorder}>
+                                    <li className='ml-3 mb-4'>Home Accessories</li>
+                                </div>
 
+                                <div className='cursor-pointer hover:text-blue-500' style={BottomBorder}>
+                                    <li className='ml-3 mb-4'>Electronics</li>
                                 </div>
-                                <div className='h-5 cursor-pointer hover:text-blue-500'>
+                                <div className='cursor-pointer hover:text-blue-500' style={BottomBorder}>
+                                    <li className='ml-3 mb-4'>Office Furniture</li>
+                                </div>
+                                <div className='cursor-pointer hover:text-blue-500' >
+                                    <li className='ml-3 mb-2'>Hotel Furniture</li>
+                                </div>
 
-                                    <li>Office Furniture</li>
-                                </div>
-                                <div className='h-5 cursor-pointer hover:text-blue-500'>
-                                    <li>Hotel Furniture</li>
-
-                                </div>
                             </ul>
                         </div>
-                        {/* <div className='absolute bg-white shadow-2xl p-4 -top-full -z-30' >
-                            <ul className='list-none top-full left-0 flex flex-col gap-y-5 '>
-                                <li>Home & Kitchen</li>
-                                <li>Electronics & Digital</li>
-                                <li>Home Accessories</li>
-                                <li>Electronics</li>
-                                <li>Office Furniture</li>
-                                <li>Hotel Furniture</li>
-                            </ul>
-                        </div> */}
                     </div>
                     {/* nav links */}
-                    <div>
-                        <ul className="lg:flex list-none font-poppins xl:text-base  lg:text-[.9rem] hidden font-medium xl:gap-x-10 gap-x-5 text-white">
-                            <li>Home</li>
-                            <li>Categories</li>
-                            <li>Products</li>
-                            <li>Pages</li>
-                            <li>Others</li>
-                            <li>Blog</li>
-                            <li>Elements</li>
-                        </ul>
-                    </div>
+                        <NavLinks></NavLinks>
                     {/* Special offers */}
                     <div className='bg-[#FDD330] relative md:flex hidden font-semibold cursor-pointer pt-3 xl:px-7 px-2 pb-5 -mt-3 drop-shadow-t-2xl   '>
                         <div className='pt-2'>
