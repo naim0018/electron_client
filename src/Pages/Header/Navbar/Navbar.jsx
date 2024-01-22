@@ -1,6 +1,5 @@
 import { useState } from 'react';
-import '../../../../src/index.css'
-import { TfiAlignLeft } from "react-icons/tfi";
+import { HiMenuAlt2 } from "react-icons/hi";
 const Navbar = () => {
 
     const [isOpen, setIsOpen] = useState(false)
@@ -12,35 +11,35 @@ const Navbar = () => {
                 <div className="flex  justify-between text-black font-montserrat h-full items-center 2xl:max-w-[1380px]  xl:max-w-6xl lg:max-w-4xl md:max-w-2xl  max-w-sm px-5  mx-auto ">
                     {/* All Categoris */}
                     <div>
-                        <div onClick={() => setIsOpen(!isOpen)} className='bg-[#FDD330] cursor-pointer relative  pt-4 xl:px-10 px-3 pb-5 -mt-4 drop-shadow-t-2xl   '>
+                        <div onClick={() => setIsOpen(!isOpen)} className='bg-[#FDD330] cursor-pointer relative  pt-1 xl:px-10 px-3 pb-1 -mt-3 drop-shadow-t-2xl   '>
                             <div className='pt-2 flex relative justify-center items-center gap-x-2'>
-                                <TfiAlignLeft></TfiAlignLeft>
-                                <p className='text-center'>All Categories</p>
+                                <div className='text-4xl'> <HiMenuAlt2></HiMenuAlt2></div>
+                                <div className='text-center  font-montserrat font-semibold'>All Categories</div>
                             </div>
 
                         </div>
                         {/* dropdown menus */}
-                        <div className={isOpen ? "absolute bg-white shadow-2xl px-[1.7rem]  top-[5.5rem] transition-all duration-1000" : "absolute bg-white shadow-2xl px-[1.7rem] py-5  -top-full transition-all duration-1000 "}>
-                            <ul className='list-none  top-full left-0 flex flex-col gap-y-5 '>
-                                <div className='h-5 '>
+                        <div className={isOpen ? "absolute bg-white shadow-2xl px-[2.4rem]  top-[5.5rem] transition-all duration-1000" : "absolute bg-white shadow-2xl px-[2.4rem] py-5  -top-full transition-all duration-1000 "}>
+                            <ul className='list-none mt-4 mb-4 top-full left-0 flex flex-col gap-y-8 '>
+                                <div className='h-5 cursor-pointer hover:text-blue-500 '>
                                     <li className='border border-b-2  border-black'>Home & Kitchen</li>
                                 </div>
-                                <div className='h-5'>
+                                <div className='h-5 cursor-pointer hover:text-blue-500'>
                                     <li>Electronics & Digital</li>
                                 </div>
-                                <div className='h-5'>
+                                <div className='h-5 cursor-pointer hover:text-blue-500'>
                                     <li>Home Accessories</li>
 
                                 </div>
-                                <div className='h-5'>
+                                <div className='h-5 cursor-pointer hover:text-blue-500'>
                                     <li>Electronics</li>
 
                                 </div>
-                                <div className='h-5'>
+                                <div className='h-5 cursor-pointer hover:text-blue-500'>
 
                                     <li>Office Furniture</li>
                                 </div>
-                                <div className='h-5'>
+                                <div className='h-5 cursor-pointer hover:text-blue-500'>
                                     <li>Hotel Furniture</li>
 
                                 </div>
@@ -70,7 +69,7 @@ const Navbar = () => {
                         </ul>
                     </div>
                     {/* Special offers */}
-                    <div className='bg-[#FDD330] relative md:flex hidden cursor-pointer pt-4 xl:px-7 px-2 pb-5 -mt-4 drop-shadow-t-2xl   '>
+                    <div className='bg-[#FDD330] relative md:flex hidden font-semibold cursor-pointer pt-3 xl:px-7 px-2 pb-5 -mt-3 drop-shadow-t-2xl   '>
                         <div className='pt-2'>
                             <p className='text-center'>Special Offers</p>
                         </div>
