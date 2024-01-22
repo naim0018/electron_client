@@ -40,7 +40,7 @@ const NavLinks = () => {
                     Categories
                 </div>
                 {/* Dropdown Menu */}
-                <ul className="absolute  opacity-0 pointer-events-none dropdown-main group-hover:opacity-100 group-hover:pointer-events-auto  shadow-xl font-poppins list-none transition-all duration-700 text-gray-400 bg-white px-96  top-14 left-0 font-normal">
+                <ul className="absolute  opacity-0 pointer-events-none dropdown-main group-hover:opacity-100 group-hover:pointer-events-auto  shadow-xl font-poppins list-none transition-all duration-700 text-gray-400 bg-white   top-14 left-0 font-normal">
                     <li className='cursor-pointer py-3 pl-3 hover:text-blue-500' style={{ borderBottom: "1px solid #EEEEEE", width: "100%", marginLeft: "0" }} >
                         Fashion 1
                     </li>

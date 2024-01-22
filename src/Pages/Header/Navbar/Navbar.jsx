@@ -28,7 +28,7 @@ const Navbar = () => {
 
                         </div>
                         {/* dropdown menus */}
-                        <div className={isOpen ? "absolute bg-white shadow-2xl w-[12.4%]  top-[5.5rem] transition-all opacity-100 duration-200" : "absolute bg-white shadow-2xl w-[12.4%] py-5  -top-full transition-all duration-700 opacity-0 "}>
+                        <div className={isOpen ? "absolute bg-white shadow-2xl 2xl:w-[12.4%]  xl:w-[16.6%] lg:w-[17.9%] md:w-[87.5%] w-[90%] top-[5.5rem] transition-all opacity-100 duration-200" : "absolute bg-white shadow-2xl 2xl:w-[12.4%]  xl:w-[16.6%] lg:w-[17.9%]  md:w-[87.5%]  w-[90%] py-5  -top-full transition-all duration-700 opacity-0 "}>
                             <ul className='list-none mt-4 mb-4 text-left top-full left-0 flex flex-col gap-y-4 '>
 
                                 <div className='cursor-pointer hover:text-blue-500' style={BottomBorder}>
@@ -57,6 +57,7 @@ const Navbar = () => {
                     {/* nav links */}
                     <div className='2xl:max-w-[1380px]'>
                         <NavLinks></NavLinks>
+
                     </div>
                     {/* Special offers */}
                     <div className='bg-[#FDD330] relative md:flex hidden font-semibold cursor-pointer pt-3 xl:px-7 px-2 pb-5 -mt-3 drop-shadow-t-2xl   '>
