@@ -13,7 +13,7 @@ const Navbar = () => {
                     </div>
                     {/* nav links */}
                     <div>
-                        <ul className="md:flex  hidden font-semibold gap-x-16 text-xl text-white">
+                        <ul className="md:flex list-none font-poppins  hidden font-medium gap-x-16 text-white">
                             <li>Home</li>
                             <li>Categories</li>
                             <li>Products</li>
