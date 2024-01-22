@@ -55,7 +55,9 @@ const Navbar = () => {
                         </div>
                     </div>
                     {/* nav links */}
+                    <div className='2xl:max-w-[1380px]'>
                         <NavLinks></NavLinks>
+                    </div>
                     {/* Special offers */}
                     <div className='bg-[#FDD330] relative md:flex hidden font-semibold cursor-pointer pt-3 xl:px-7 px-2 pb-5 -mt-3 drop-shadow-t-2xl   '>
                         <div className='pt-2'>
