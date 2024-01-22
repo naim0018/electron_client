@@ -1,12 +1,16 @@
-import Navbar from './Pages/Header/Navbar/Navbar'
-import Home from './Pages/Home/Home'
-import  "./index.css"
+
+
+import { Outlet } from "react-router-dom"
+import MainLayout from "./ComponentCollection/HomeComponents/MainLayout"
+
 
 const App = () => {
   return (
     <div>
-      <Navbar></Navbar>
-      {/* <Home/> */}
+      <MainLayout>
+        <Outlet/>
+      </MainLayout>
+      
     </div>
   )
 }

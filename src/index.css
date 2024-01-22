@@ -6,3 +6,26 @@
 /* .main-yellow {
     color: #FDD330;
 } */
+
+@layer utilities {
+    /* .nav{
+        @apply relative ml-10 text-black font-bold tracking-[1px]
+    }
+    .nav::after{
+        @apply content-[''] bg-blue-500 h-[3px] w-0 left-0 -bottom-[5px] rounded-xl absolute duration-300
+    }
+    .nav:hover::after{
+        @apply w-[100%] 
+    } */
+    .nav::before{
+        @apply  relative h-2 w-0 bg-blue-500
+    }
+    .nav::after{
+        @apply  content-[''] absolute h-2 hover:w-full 
+    }
+    .activeRoute{
+        @apply border-b-2 border-b-blue-500
+    }
+   
+    
+}
