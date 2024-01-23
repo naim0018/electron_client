@@ -1,15 +1,11 @@
-import CategoriesList from './Pages/Header/Navbar/CategoriesList'
-import Navbar from './Pages/Header/Navbar/Navbar'
-
-
-
-import "./index.css"
+import React from 'react'
+import Home from './Pages/Home/Home'
+import  "./index.css"
 
 const App = () => {
   return (
     <div>
-      <Navbar></Navbar>
-      {/* <CategoriesList></CategoriesList> */}
+      <Home/>
     </div>
   )
 }
