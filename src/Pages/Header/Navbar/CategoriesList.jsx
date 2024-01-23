@@ -2,7 +2,7 @@ import img from '../../../../public/1.jpg'
 const CategoriesList = () => {
 
     return (
-        <section className="  2xl:max-w-[1380px] font-poppins   shadow-2xl xl:max-w-6xl lg:max-w-4xl md:max-w-2xl  max-w-sm mx-auto pb-8 bg-white text-gray-400    ">
+        <section className="absolute left-0 right-0 top-[5.5rem] py-2 2xl:max-w-[1380px] font-poppins   shadow-2xl xl:max-w-6xl lg:max-w-4xl md:max-w-2xl  max-w-sm mx-auto pb-8 bg-white text-gray-400    ">
             {/* full lists */}
             <div className="flex gap-x-10 pt-5   flex-row w-11/12 mx-auto justify-between items-center">
                 {/* classic */}
@@ -12,7 +12,7 @@ const CategoriesList = () => {
                     </div>
                     {/* Classic NavLinks */}
                     <div>
-                        <ul className="list-none space-y-2 xl:text-base text-sm  xl:text-base text-sm  pt-5">
+                        <ul className="list-none space-y-2   xl:text-base text-sm  pt-5">
                             <li className="cursor-pointer">Left Sidebar 3 Coulmn</li>
                             <li className="cursor-pointer">Left Sidebar 4 Coulmn</li>
                             <li className="cursor-pointer">Right Sidebar 3 Coulmn</li>

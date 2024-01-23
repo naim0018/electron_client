@@ -42,9 +42,18 @@ const NavLinks = () => {
 
 
 
-            <div className="">
-                <p className="py-4">Category</p>
-                
+            <div className="inline-block">
+                <p
+                    onMouseEnter={() => setNestedDropdown5Open(true)}
+                    onMouseLeave={() => setNestedDropdown5Open(false)}
+                    className="py-4 group pointer-events-auto cursor-pointer">Category</p>
+                <div
+                    onMouseEnter={() => setNestedDropdown5Open(true)}
+                    onMouseLeave={() => setNestedDropdown5Open(false)}
+                    className={` ${isNestedDropdown5Open ? '  block' : ' hidden'}   `}>
+                    <CategoriesList></CategoriesList>
+                </div>
+
             </div>
 
 

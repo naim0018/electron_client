@@ -9,7 +9,7 @@ const App = () => {
   return (
     <div>
       <Navbar></Navbar>
-      <CategoriesList></CategoriesList>
+      {/* <CategoriesList></CategoriesList> */}
     </div>
   )
 }
