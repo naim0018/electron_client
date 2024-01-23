@@ -1,3 +1,4 @@
+import CategoriesList from './Pages/Header/Navbar/CategoriesList'
 import Navbar from './Pages/Header/Navbar/Navbar'
 
 
@@ -8,6 +9,7 @@ const App = () => {
   return (
     <div>
       <Navbar></Navbar>
+      <CategoriesList></CategoriesList>
     </div>
   )
 }

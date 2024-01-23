@@ -15,7 +15,7 @@ const Navbar = () => {
 
 
     return (
-        <section className="mt-10 w-full h-14">
+        <section className="mt-10 w-auto h-14">
             <div className=" bg-[#212121] h-12">
                 <div className="flex  justify-between text-black font-montserrat h-full items-center 2xl:max-w-[1380px]  xl:max-w-6xl lg:max-w-4xl md:max-w-2xl  max-w-sm px-5  mx-auto ">
                     {/* All Categoris */}
@@ -55,10 +55,10 @@ const Navbar = () => {
                         </div>
                     </div>
                     {/* nav links */}
-                    <div className='2xl:max-w-[1380px]'>
+                    
                         <NavLinks></NavLinks>
 
-                    </div>
+                    
                     {/* Special offers */}
                     <div className='bg-[#FDD330] relative md:flex hidden font-semibold cursor-pointer pt-3 xl:px-7 px-2 pb-5 -mt-3 drop-shadow-t-2xl   '>
                         <div className='pt-2'>

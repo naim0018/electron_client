@@ -1,14 +1,16 @@
 import { useState } from "react";
 import { MdKeyboardArrowRight } from "react-icons/md";
-import { NavLink } from "react-router-dom";
+
+import CategoriesList from "./CategoriesList";
 
 const NavLinks = () => {
     const [isNestedDropdown1Open, setNestedDropdown1Open] = useState(false);
     const [isNestedDropdown2Open, setNestedDropdown2Open] = useState(false);
     const [isNestedDropdown3Open, setNestedDropdown3Open] = useState(false);
     const [isNestedDropdown4Open, setNestedDropdown4Open] = useState(false);
+    const [isNestedDropdown5Open, setNestedDropdown5Open] = useState(false);
     return (
-        <div className='lg:flex list-none font-poppins  xl:text-base lg:text-[.9rem] hidden font-medium xl:gap-x-12 gap-x-5 text-white'>
+        <div className='lg:flex list-none font-poppins max-w-7xl  xl:text-base lg:text-[.9rem] hidden font-medium xl:gap-x-12 gap-x-5 text-white'>
             {/* home */}
             <div className="relative inline-block group">
                 <div className="cursor-pointer py-4 hover:text-yellow-200">
@@ -35,30 +37,27 @@ const NavLinks = () => {
                 </ul>
             </div>
             {/* Categories */}
-            <div className="relative  inline-block group">
-                <div className="cursor-pointer py-4 hover:text-yellow-200">
-                    Categories
-                </div>
-                {/* Dropdown Menu */}
-                <ul className="absolute  opacity-0 pointer-events-none dropdown-main group-hover:opacity-100 group-hover:pointer-events-auto  shadow-xl font-poppins list-none transition-all duration-700 text-gray-400 bg-white   top-14 left-0 font-normal">
-                    <li className='cursor-pointer py-3 pl-3 hover:text-blue-500' style={{ borderBottom: "1px solid #EEEEEE", width: "100%", marginLeft: "0" }} >
-                        Fashion 1
-                    </li>
-                    <li className='cursor-pointer py-3 pl-3 hover:text-blue-500' style={{ borderBottom: "1px solid #EEEEEE", width: "100%", marginLeft: "0" }}>
-                        Fashion 1
-                    </li>
-                    <li className='cursor-pointer py-3 pl-3 hover:text-blue-500' style={{ borderBottom: "1px solid #EEEEEE", width: "100%", marginLeft: "0" }}>
-                        Furniture
-                    </li>
-                    <li className='cursor-pointer py-3 pl-3 hover:text-blue-500' style={{ borderBottom: "1px solid #EEEEEE", width: "100%", marginLeft: "0" }}>
-                        Mix Products
-                    </li>
-                    <li className='cursor-pointer py-3 pl-3 hover:text-blue-500' style={{ borderBottom: "1px solid #EEEEEE", width: "100%", marginLeft: "0" }}>
-                        Electronics
-                    </li>
 
-                </ul>
+
+
+
+
+            <div className="">
+                <p className="py-4">Category</p>
+                
             </div>
+
+
+
+
+
+
+
+
+
+
+
+
             {/* products */}
 
 
